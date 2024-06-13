@@ -1,119 +1,49 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="index.js" defer></script>
 </head>
-<body>
-    <style>
+<style>
 
-        .txt{
-            width:30%;
-            font-size: 20px;
-        }
-        .hjk{
-       
-            background-color: rgb(77, 155, 245);
-            padding:10px 15px;
-            width:fit-content;
-            border: none;
-            border-radius: 4px;
-            display: block;
-        color:white;
-        transition: all .5s;
-        cursor: pointer;
-        
-        }
-        .hjk:hover{
-            background-color: rgb(17, 118, 233);
-        }
 
-        .pp-round{
-            width: 120px;
-            height:120px;
-            border-radius: 50%;
-        }
-.shift{
-    margin-left:30px;
+#results-container {
+    display: flex;
+flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+
 }
-        .coms{
-            display:flex;
-            background-color: white;
-            border-radius: 5px;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            padding: 5px;
-width:50%;
 
-margin-top: 5px;}
-        .cn{
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        .c-d{
-        margin-left:4px;
-      font-size: 13px;
-        }
-       .c-m{
-        width: 100%;
-       }
+.result {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer; /* Add hover effect if desired */
+}
 
-       .det{
-        margin-left: 20px;
-       }
-       .repBtn{
-        color:rgb(0, 119, 255);
-        text-decoration: underline;
-       }
-       .etc{
-        display:flex;
+.result:after {
+    content: " | ";
+    padding: 0 5px; 
+    color: #ddd;  
+}
 
-       }
-       .etc p{
-        border-radius: 4px;
-        border: 1px solid rgb(34, 34, 34);
-        padding: 5px 10px;
-        width:fit-content;
-        cursor: pointer;
-       }
-       .et:hover{
-        background-color: black;
-        color:white;
-       }
-       .c-del{
-        margin-left: 10px;
-       }
-       .c-del:hover{
-      
-        border-color:rgb(250, 43, 88);
-        color:white;
-        background-color: rgb(250, 43, 88);
-       }
-    </style>
+.result:last-child:after {
+    content: ""; 
+}
+
+</style>
+<body>
     
-
-<textarea name="" class="txt" id=""></textarea>
- <input type="text"  id="name" placeholder="name"> 
-
-<button class="hjk">submit</button>
-
-<div class="holder">
-
-<div class="coms">
-    <img class="pp-round" src="pp.jpg" alt="">
-<div class="det">
-    <p class="cn">Okolo Emeka <span class="c-d">23/10/24</spanc></p>
-    <p class="c-m">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, dolore.</p>
-    <p class="repBtn">Reply</p>
-
-    <div class="etc">
-        <p class="et">Edit</p>
-        <p class="c-del">Delete</p>
-    </div>
-</div>
-</div>
-
-</div>
-</body>
+    <div id="results-container">
+        <div class="result">Title 1 - Description for Title 1</div>
+        <div class="result">Title 2 - Description for Title 2</div>
+        </div>
+   </body>
 </html>
